@@ -1,0 +1,35 @@
+$navMenuHeight = 50px
+[octo-nav]
+  .nav-container
+    height $navMenuHeight
+    position relative
+    padding 0 15px
+    display block
+  #menu,
+  #hidden-menu
+    width 100%
+    height @navMenuHeight
+    z-index 25
+    transition all .25s ease 0s
+    display table-cell
+    vertical-align middle
+    i
+      margin 0 5px
+      cursor pointer
+      line-height $navMenuHeight
+      font-size(24px)
+    img
+      vertical-align top
+      height 40px
+      margin 5px
+  #hidden-menu
+    background-color white
+    display none
+    padding 0 15px
+    &.fixed
+      position fixed
+      top 0
+      left 0
+      right 0
+      z-index 5
+      display block

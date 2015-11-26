@@ -1,0 +1,25 @@
+section#thoughts.bg--peter-river
+  .container
+    .row
+      .col-md-10.col-md-offset-1
+        .thought-wrapper
+          .before
+          .after
+          .thought.bg--clouds.bd--silver
+              h4
+                a.tx--silver.hv--peter-river(href="http://medium.com/@_jh3y", target="_blank") Check out my blog
+        i#kick.fa.fa-info-circle.tx--white
+        script.
+          var btn = document.getElementById('kick'),
+            cloudPiecesOne = document.querySelectorAll('.after')[0],
+            cloudPiecesTwo = document.querySelectorAll('.before')[0],
+            cloudPiecesThree = document.querySelectorAll('.thought')[0];
+          btn.addEventListener('mouseover', function() {
+            this.style.opacity = 0;
+            cloudPiecesOne.style.display = 'block';
+            cloudPiecesOne.className += ' first';
+            cloudPiecesTwo.style.display = 'block';
+            cloudPiecesTwo.className += ' second';
+            cloudPiecesThree.style.display = 'block';
+            cloudPiecesThree.className += ' third';
+          });

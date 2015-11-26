@@ -1,0 +1,24 @@
+/*
+  Required IE patch for canvas header and scrollbar visibility.
+*/
+.ie
+  header
+    height 100vh
+.lt-ie10
+  .stars
+    right 18px
+
+.lt-ie9
+  .header
+    position fixed
+    top 0
+    right 0
+    bottom 0
+    left 0
+    h1
+      margin 30px
+    .txt
+      width 300px
+      margin 0 auto
+      p
+        margin 10px

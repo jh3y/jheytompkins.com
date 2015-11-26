@@ -1,0 +1,38 @@
+nav(octo-nav-navigation, octo-nav-panel)
+  div(octo-nav-scrollable)
+    ul
+      li
+        a(octo-nav-link, href="#about")
+          img.img-responsive(src="img/me.jpg")
+          |About
+      li
+        a(octo-nav-link, href="#skills")
+          i.fa.fa-code
+          |Skills
+      li
+        a(octo-nav-link, href="#projects")
+          i.fa.fa-keyboard-o
+          |Projects
+      li
+        a(octo-nav-link, href="#thoughts")
+          i.fa.fa-cloud
+          |Thoughts
+      li
+        a(octo-nav-link, href="#contact")
+          i.fa.fa-envelope-o
+          |Contact
+      li(octo-nav-header) Latest Tweets
+      li
+        include twitter-feed
+      li(octo-nav-header) Github
+      li(data-github-badge)
+        include github-badge
+      li(octo-nav-header) Extras
+      li
+        a(octo-nav-link, href="http://github.com/jh3y", target="_blank")
+          i.fa.fa-github
+          |Follow me
+      li
+        a(octo-nav-link, href="http://medium.com/@_jh3y", target="_blank")
+          i.fa.fa-medium
+          |Blog

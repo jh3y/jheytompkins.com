@@ -1,0 +1,10 @@
+.projects
+  padding 0
+  .project
+    margin-bottom 44px
+a.more
+  display inline-block
+  i
+    font-size(48px)
+  &:hover
+    color #E74C3c

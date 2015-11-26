@@ -1,0 +1,41 @@
+#contact
+  background url('../img/atthebeach.jpg')
+  background-size cover
+  background-position center center
+  height 600px
+  position relative
+  @media(min-width 1200px)
+    height 100vh
+
+  & > .skin
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background-color rgba(0,0,0,.65)
+    & > .contact-info
+      $contactInfoWidth= 300px
+      $contactInfoHeight= 6.25rem
+      width $contactInfoWidth
+      position absolute
+      top 50%
+      left 50%
+      margin-top -($contactInfoHeight / 2)
+      margin-left -($contactInfoWidth / 2)
+      & > h3
+        margin 0 0 1.25rem 0 0
+        color #FFF
+        line-height 1
+
+      & > .social-icons
+        line-height 1
+        a
+          display inline-block
+          float left
+          width (100 / 6%)
+          &:hover
+            transform translate(0, -10px)
+
+          & > i
+            color #FFF

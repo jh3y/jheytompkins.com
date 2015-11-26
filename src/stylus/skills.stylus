@@ -1,0 +1,7 @@
+.skills
+  li
+    display inline-block
+    float right
+  h4
+    transition-duration 0s
+    display inline-block

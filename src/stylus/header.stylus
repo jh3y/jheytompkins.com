@@ -1,0 +1,41 @@
+.windows
+  .stars
+    right 18px
+.stars
+  position relative
+  transition-duration 250ms
+  overflow hidden
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  background #111
+
+[octo-nav].show-nav .stars
+  left 250px
+
+
+header
+  position relative
+  height 1200px
+  overflow hidden
+  h1
+    position fixed
+    top 100px
+    margin-left 12%
+    transition-duration 0s
+    i
+      opacity .25
+      margin-left 10px
+      transition-duration 250ms
+      // gets clipped without min-width
+      min-width 100px
+      &:hover
+        opacity 1
+        transform translateY(-10px)
+
+@media (min-width: 1200px)
+  header
+    background-size: cover
+    height: 100vh

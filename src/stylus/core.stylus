@@ -1,0 +1,134 @@
+remify(size)
+  val = size / (size * 0 + 1)
+  ((val) / 16)rem
+
+font-size(size)
+  font-size size
+  val = size / (size * 0 + 1)
+  font-size ((val) / 16)rem
+
+
+colorPalette = {
+  turquoise: #1ABC9C
+  green-sea: #16A085
+  emerald: #2ECC71
+  nephritis: #27AE60
+  peter-river: #3498DB
+  belize-hole: #2980B9
+  amethyst: #9B59B6
+  wisteria: #8E44AD
+  wet-asphalt: #34495E
+  midnight-blue: #2C3E50
+  sunflower: #F1C40F
+  orange: #F39C12
+  carrot: #E67E22
+  pumpkin: #D35400
+  alizarin: #E74C3C
+  pomegranate: #C0392B
+  clouds: #ECF0F1
+  silver: #BDC3C7
+  concrete: #95A5A6
+  asbestos: #7F8C8D
+  white: #FFF
+}
+for key, value in colorPalette
+  .bg--{key}
+    background-color value
+  // Slight patch for hovering skillsets
+  .skills,
+  .projects
+    h4,
+    a
+      &.bg--{key}
+        &:hover
+          color value
+          background-color white
+  .tx--{key}
+    color value
+  .bd--{key}
+    border 4px solid value
+  .hv--{key}
+    &:hover
+      color value
+
+*
+  box-sizing border-box
+  transition all 250ms ease 0s
+
+.tx--center
+  text-align center
+
+.no--selection
+  outline 0
+  user-select none
+  *
+    outline 0
+    user-select none
+
+html
+  font-size 14px
+  @media(min-width: 768px)
+    font-size 16px
+
+body
+  width 100%
+  overflow-x hidden
+  font-smoothing antialiased
+  -webkit-font-smoothing antialiased
+  font-family "Helvetica Neue"
+  font-weight 300
+  font-size(16px)
+  color #555
+
+a
+  color #555
+  &:hover
+    text-decoration none
+
+p
+  margin 100px 0 10px 0
+
+a
+  &:active
+  &:focus
+    outline none
+    border none
+
+.content-wrapper
+  position absolute
+  top 0
+  right 0
+  left 0
+  bottom 0
+
+*::selection
+  background #758C8D
+  color white
+  opacity .5
+
+section
+  position relative
+  padding 100px 0
+
+for value in 1 2 3 4 5 6
+  h{value}
+    font-size((7 - (value + 1)) * 16px)
+    if value == 1
+      font-size(3 * 16px)
+    @media(min-width: 768px)
+      font-size((7 - value) * 16px)
+    if value > 1
+      font-weight 300
+    letter-spacing remify(-2px)
+    margin 0
+
+
+li[data-twttr-id]
+  padding 10px
+li[data-github-badge]
+  iframe
+    margin 10px 0
+    width 100%
+
+footer
+  padding 30px
