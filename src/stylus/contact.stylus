@@ -29,6 +29,8 @@
         line-height 1
 
       & > .social-icons
+        display flex
+        justify-content center
         line-height 1
         a
           display inline-block

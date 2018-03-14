@@ -95,6 +95,11 @@ gulp.task('deploy', ['complete:build'], function () {
     }));
 });
 
+gulp.task('deploy:package', ['complete:build'], function() {
+  return gulp.src(sources.deploy)
+    .pipe(gulp.dest('./.deploy'))
+})
+
 gulp.task('deploy:prerelease', ['complete:build'], function () {
   return gulp.src(destinations.overwatch)
     .pipe(plugins.deploy());

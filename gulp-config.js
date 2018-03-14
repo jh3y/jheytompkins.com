@@ -52,6 +52,7 @@ module.exports = {
       stylus: 'src/stylus/**/*.stylus',
       img: 'src/img/**/*.{jpg,png}',
       overwatch: env + '**/*.{html,js,css}',
+      deploy: env + '**/*.{min.js,min.css,html,png,xml,ico,txt,jpg,otf,woff,woff2,ttf,svg,eot}',
       assets: 'src/assets/**/*.*',
       vendor: {
         scripts: [

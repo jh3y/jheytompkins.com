@@ -1,12 +1,7 @@
-Site source
+Site source for jheytompkins.com
 ---
 
-Source for [jh3y.github.io](http://jh3y.github.io)
+Source for [jheytompkins.com](https://jheytompkins.com)
 
-Built by me!
-
-* Stylus
-* Jade
-* Gulp
 
 __jh3y__ 2015
