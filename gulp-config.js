@@ -37,7 +37,6 @@ module.exports = {
     load: {
       rename: {
         'gulp-gh-pages'    : 'deploy',
-        'gulp-util'        : 'gUtil',
         'gulp-minify-css'  : 'minify',
         'gulp-autoprefixer': 'prefix'
       }
@@ -56,16 +55,18 @@ module.exports = {
       assets: 'src/assets/**/*.*',
       vendor: {
         scripts: [
-          'src/vendor/jquery/dist/jquery.js',
-          'src/vendor/shooting-stars/dist/shooting-stars.js'
+          'node_modules/jquery/dist/jquery.js',
+          'node_modules/shooting-stars/dist/shooting-stars.js'
         ],
         styles: [
-          'src/vendor/normalize.css/normalize.css',
-          'src/vendor/bootstrap/dist/css/bootstrap.css',
-          'src/vendor/fontawesome/css/font-awesome.css'
+          'node_modules/normalize.css/normalize.css',
+          'node_modules/bootstrap/dist/css/bootstrap.css',
+          'node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css',
+          'node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
+          'node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css'
         ],
         fonts: [
-          'src/vendor/fontawesome/fonts/**/*.*'
+          'node_modules/@fortawesome/fontawesome-free-webfonts/webfonts/**/*.*'
         ]
       }
     },
@@ -75,7 +76,7 @@ module.exports = {
       html: env,
       css: env + 'css/',
       img: env + 'img/',
-      fonts: env + 'fonts/',
+      fonts: env + 'webfonts/',
       assets: env,
       overwatch: env + '**/*.*'
     }
