@@ -75,6 +75,7 @@ body
   overflow-x hidden
   font-smoothing antialiased
   -webkit-font-smoothing antialiased
+  -webkit-overflow-scrolling touch
   font-family "Helvetica Neue"
   font-weight 300
   font-size(16px)
