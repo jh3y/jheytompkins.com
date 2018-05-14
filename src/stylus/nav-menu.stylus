@@ -22,6 +22,7 @@ $navMenuHeight = 50px
       vertical-align top
       height 40px
       margin 5px
+      border-radius 100%
   #hidden-menu
     background-color white
     display none
